@@ -2,27 +2,27 @@ import java.util.Scanner;
 
 public class Principal {
     public void main() {
-        int a;
-        int b;
-        int c;
+        double a;
+        double b;
+        double c;
         int num = 4;
         double sum;
         double res;
-        int divisor;
-        int multiplicador=2;
+        double divisor;
+        double multiplicador=2.0;
         double div1;
         double div2;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ecuación de Segundo Grado");
         System.out.println("Ingresa el primer número (a): ");
-        a = teclado.nextInt();
+        a = teclado.nextDouble();
         if (a==0){
             System.out.println("El número de a no puede ser igual a 0");
         }else {
             System.out.println("Ingresa el segundo número (b): ");
-            b = teclado.nextInt();
+            b = teclado.nextDouble();
             System.out.println("Ingresa el tercer número (c): ");
-            c = teclado.nextInt();
+            c = teclado.nextDouble();
             double discriminante = b * b - num * a * c;
             if (discriminante>0){
                 double raiz = Math.sqrt(discriminante);
